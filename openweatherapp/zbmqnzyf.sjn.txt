@@ -1,0 +1,32 @@
+﻿s
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   .bowerrc
+#	new file:   app/Index.html
+#	new file:   app/bower_components/angular-route/.bower.json
+#	new file:   app/bower_components/angular-route/README.md
+#	new file:   app/bower_components/angular-route/angular-route.js
+#	new file:   app/bower_components/angular-route/angular-route.min.js
+#	new file:   app/bower_components/angular-route/angular-route.min.js.map
+#	new file:   app/bower_components/angular-route/bower.json
+#	new file:   app/bower_components/angular/.bower.json
+#	new file:   app/bower_components/angular/README.md
+#	new file:   app/bower_components/angular/angular-csp.css
+#	new file:   app/bower_components/angular/angular.js
+#	new file:   app/bower_components/angular/angular.min.js
+#	new file:   app/bower_components/angular/angular.min.js.gzip
+#	new file:   app/bower_components/angular/angular.min.js.map
+#	new file:   app/bower_components/angular/bower.json
+#	new file:   app/city.html
+#	new file:   app/home.html
+#	new file:   app/owm-app.js
+#	new file:   bower.json
+#
+
