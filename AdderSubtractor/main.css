@@ -1,0 +1,32 @@
+body {
+    margin: 0px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #1d9ef3;
+}
+
+.container {
+    margin-top: 200px;
+    padding: 5px;
+    background-color: #fff;
+    text-align: center;
+    clear: both;
+}
+
+.result {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
