@@ -1,0 +1,15 @@
+{
+  "name": "WaitstaffCalc2",
+  "version": "0.0.0",
+  "description": "Waitstaff Routing & Animation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "angular projects"
+  },
+  "author": "Akemi Davisson",
+  "license": "ISC"
+}
