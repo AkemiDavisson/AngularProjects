@@ -1,0 +1,71 @@
+﻿Revert "Deleted files"
+
+This reverts commit ee381a8dd91a338438e855cdc867df16b6994271.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   AdderSubtractor/Index.html
+#	new file:   AdderSubtractor/app.js
+#	new file:   AdderSubtractor/jQuery/jquery-2.1.1.intellisense.js
+#	new file:   AdderSubtractor/jQuery/jquery-2.1.1.js
+#	new file:   AdderSubtractor/jQuery/jquery-2.1.1.min.js
+#	new file:   AdderSubtractor/jQuery/jquery-2.1.1.min.map
+#	new file:   AdderSubtractor/main.css
+#	new file:   Instagram/Index.html
+#	new file:   Instagram/angular.min.js
+#	new file:   Instagram/angular.min.js.map
+#	new file:   Instagram/app.js
+#	new file:   Instagram/ng-instagram.png
+#	new file:   Instagram/style.css
+#	new file:   MadLibs1/Index.html
+#	new file:   MadLibs1/angular.min.js
+#	new file:   MadLibs1/madlibs-logo.png
+#	new file:   MadLibs1/madlibs-smiley.png
+#	new file:   MadLibs1/madlibstyle.css
+#	new file:   MadLibs1/style.css
+#	new file:   MadLibs2/Index.html
+#	new file:   MadLibs2/angular.min.js
+#	new file:   MadLibs2/app.js
+#	new file:   MadLibs2/madlibs-logo.png
+#	new file:   MadLibs2/madlibs-smiley.png
+#	new file:   MadLibs2/madlibstyle.css
+#	new file:   MadLibs3/Index.html
+#	new file:   MadLibs3/angular-animate.js
+#	new file:   MadLibs3/angular.min.js
+#	new file:   MadLibs3/app.js
+#	new file:   MadLibs3/madlibs-logo.png
+#	new file:   MadLibs3/madlibs-smiley.png
+#	new file:   MadLibs3/madlibstyle.css
+#	new file:   WaitstaffCalc/Index.html
+#	new file:   WaitstaffCalc/angular.min.js
+#	new file:   WaitstaffCalc/app.js
+#	new file:   WaitstaffCalc/dining_background.jpg
+#	new file:   WaitstaffCalc/restBackground.jpg
+#	new file:   WaitstaffCalc/style.css
+#	new file:   WaitstaffCalc2/.bowerrc
+#	new file:   WaitstaffCalc2/app/bower_components/angular-route/.bower.json
+#	new file:   WaitstaffCalc2/app/bower_components/angular-route/README.md
+#	new file:   WaitstaffCalc2/app/bower_components/angular-route/angular-route.js
+#	new file:   WaitstaffCalc2/app/bower_components/angular-route/angular-route.min.js
+#	new file:   WaitstaffCalc2/app/bower_components/angular-route/angular-route.min.js.map
+#	new file:   WaitstaffCalc2/app/bower_components/angular-route/bower.json
+#	new file:   WaitstaffCalc2/app/bower_components/angular/.bower.json
+#	new file:   WaitstaffCalc2/app/bower_components/angular/README.md
+#	new file:   WaitstaffCalc2/app/bower_components/angular/angular-csp.css
+#	new file:   WaitstaffCalc2/app/bower_components/angular/angular.js
+#	new file:   WaitstaffCalc2/app/bower_components/angular/angular.min.js
+#	new file:   WaitstaffCalc2/app/bower_components/angular/angular.min.js.gzip
+#	new file:   WaitstaffCalc2/app/bower_components/angular/angular.min.js.map
+#	new file:   WaitstaffCalc2/app/bower_components/angular/bower.json
+#	new file:   WaitstaffCalc2/bower.json
+#	new file:   WaitstaffCalc2/package.json
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	bk1szeip.hsg.txt
+

@@ -1,0 +1,69 @@
+﻿Test Delete
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    AdderSubtractor/Index.html
+#	deleted:    AdderSubtractor/app.js
+#	deleted:    AdderSubtractor/jQuery/jquery-2.1.1.intellisense.js
+#	deleted:    AdderSubtractor/jQuery/jquery-2.1.1.js
+#	deleted:    AdderSubtractor/jQuery/jquery-2.1.1.min.js
+#	deleted:    AdderSubtractor/jQuery/jquery-2.1.1.min.map
+#	deleted:    AdderSubtractor/main.css
+#	deleted:    Instagram/Index.html
+#	deleted:    Instagram/angular.min.js
+#	deleted:    Instagram/angular.min.js.map
+#	deleted:    Instagram/app.js
+#	deleted:    Instagram/ng-instagram.png
+#	deleted:    Instagram/style.css
+#	deleted:    MadLibs1/Index.html
+#	deleted:    MadLibs1/angular.min.js
+#	deleted:    MadLibs1/madlibs-logo.png
+#	deleted:    MadLibs1/madlibs-smiley.png
+#	deleted:    MadLibs1/madlibstyle.css
+#	deleted:    MadLibs1/style.css
+#	deleted:    MadLibs2/Index.html
+#	deleted:    MadLibs2/angular.min.js
+#	deleted:    MadLibs2/app.js
+#	deleted:    MadLibs2/madlibs-logo.png
+#	deleted:    MadLibs2/madlibs-smiley.png
+#	deleted:    MadLibs2/madlibstyle.css
+#	deleted:    MadLibs3/Index.html
+#	deleted:    MadLibs3/angular-animate.js
+#	deleted:    MadLibs3/angular.min.js
+#	deleted:    MadLibs3/app.js
+#	deleted:    MadLibs3/madlibs-logo.png
+#	deleted:    MadLibs3/madlibs-smiley.png
+#	deleted:    MadLibs3/madlibstyle.css
+#	deleted:    WaitstaffCalc/Index.html
+#	deleted:    WaitstaffCalc/angular.min.js
+#	deleted:    WaitstaffCalc/app.js
+#	deleted:    WaitstaffCalc/dining_background.jpg
+#	deleted:    WaitstaffCalc/restBackground.jpg
+#	deleted:    WaitstaffCalc/style.css
+#	deleted:    WaitstaffCalc2/.bowerrc
+#	deleted:    WaitstaffCalc2/app/bower_components/angular-route/.bower.json
+#	deleted:    WaitstaffCalc2/app/bower_components/angular-route/README.md
+#	deleted:    WaitstaffCalc2/app/bower_components/angular-route/angular-route.js
+#	deleted:    WaitstaffCalc2/app/bower_components/angular-route/angular-route.min.js
+#	deleted:    WaitstaffCalc2/app/bower_components/angular-route/angular-route.min.js.map
+#	deleted:    WaitstaffCalc2/app/bower_components/angular-route/bower.json
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/.bower.json
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/README.md
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/angular-csp.css
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/angular.js
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/angular.min.js
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/angular.min.js.gzip
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/angular.min.js.map
+#	deleted:    WaitstaffCalc2/app/bower_components/angular/bower.json
+#	deleted:    WaitstaffCalc2/bower.json
+#	deleted:    WaitstaffCalc2/package.json
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	bk1szeip.hsg.txt
+#	c0je5ozl.pwo.txt
+
