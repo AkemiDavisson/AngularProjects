@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html lang="en" ng-app='waitStaffCalcApp'>
+<head>
+	<meta charset="utf-8">
+	<title>Waiter Earnings Calculator</title>
+	<meta name="description" content="Waiter Earnings Calculator">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animate.css">
+		  <!--[if lt IE 9]>
+		  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		  <![endif]-->
+
+		  <script type="text/javascript" src="../app/bower_components/angular/angular.js"></script>
+		  <script type="text/javascript" src="../app/bower_components/angular-route/angular-route.js"></script>
+		  <script type="text/javascript" src="../app/bower_components/angular-animate/angular-animate.js"></script>
+		  <script type="text/javascript" src="../app/bower_components/ngAnimate-animate.css/animate.js"></script>
+
+		  <script type="text/javascript" src="../app/waitstaffApp.js"></script>
+		  <script type="text/javascript" src="../app/routes.js"></script>			
+		  <script type="text/javascript" src="../app/controllers/newMealForm.js"></script>
+		  <script type="text/javascript" src="../app/controllers/earnings.js"></script>
+		  <script type="text/javascript" src="../app/models/tipModel.js"></script>
+		</head>
+
+		<body>
+			<div class='container'>
+			<h1>Waitstaff Calculator</h1>
+		
+				<nav>
+					<ul>
+						<li>
+							<a href='#'>Home</a>
+						</li>
+						<li>
+							<a href='#/new-meal'>New Meal</a>
+						</li>
+						<li>
+							<a href='#/my-earnings'>My Earnings</a>
+						</li>
+					</ul>
+				</nav>
+	
+			
+				<div ng-view class='animate-view dn-flip-x'> </div>
+			</div>
+			
+		</body>
+		</html>

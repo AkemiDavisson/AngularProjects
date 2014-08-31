@@ -1,0 +1,49 @@
+			
+<div class='a-container' ng-controller='newMealController'>
+	<div class='meal-details panel'>
+		<div class='panel-heading'>
+			
+			<h3 class='panel-title'>Enter the Meal Details</h3>
+		</div>
+		<form  ng-submit='submit()' name='calcForm'>
+			<div class='input-group' novalidate>
+				<label>Base Meal Price:</label>
+				<div>
+					<input type='number' placeholder='$0.00' ng-model='data.mealPrice' autofocus required>
+				</div>
+			</div>
+			<div class='input-group'>
+				<label>Tax Rate:</label>
+				<div>
+					<input type='number' placeholder='%' ng-model='data.taxRate' required>
+				</div>
+			</div>
+			<div class='input-group'>
+				<label>Tip Percentage:</label>
+				<div>
+					<input type='number' placeholder='%' ng-model='data.tipPercent' required>
+				</div>
+			</div>
+			<div class='actions'>
+				<button type='button' class='btn btn-grey' ng-click='clear()'>Clear</button>
+				<button type='submit' class='btn btn-green'>Submit</button>
+			</div>
+		</form>
+
+	</div>
+
+	<div class='charges-results'>
+		<div class='cust-charges panel'>
+			<div class='panel-heading'>
+				<h3 class='panel-title'>Customer Charges</h3>
+			</div>
+			<div class='row'>
+				<label>Subtotal:</label> <span>{{data.subTotal | currency}}</span>
+
+				<label>Tip:</label> <span>{{data.tip | currency}}</span>
+
+				<label>Total:</label> <span>{{data.total | currency}}</span>	
+			</div>
+		</div>
+	</div>
+</div>

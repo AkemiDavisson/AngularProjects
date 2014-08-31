@@ -1,0 +1,20 @@
+<div class='a-container'>
+	<div class='earnings-results' ng-controller='earningsController'>
+		
+		<div class='earnings panel'>
+			<div class='panel-heading'>
+				<h3 class='panel-title'>My Earnings</h3>
+			</div>
+			<div class='row'>
+				<label>Tip Total:</label> <span>{{data.tip.total | currency}}</span>
+
+				<label>Meal Count:</label> <span> {{data.mealCount}}</span>
+
+				<label>Avg. Tip/Meal:</label> <span>{{data.tip.average | currency}}</span>	
+			</div>
+			<div class='actions'>
+				<button type='button' ng-click='reset()' class='btn btn-grey'>Reset</button>
+			</div>
+		</div>
+	</div>
+</div>

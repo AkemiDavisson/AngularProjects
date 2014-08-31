@@ -1,0 +1,1 @@
+angular.module('waitStaffCalcApp', ['ngRoute', 'ngAnimate', 'ngAnimate-animate.css']);
