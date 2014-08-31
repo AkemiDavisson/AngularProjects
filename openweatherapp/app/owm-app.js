@@ -1,4 +1,4 @@
-angular.module('OWMApp', ['ngRoute'])
+angular.module('OWMApp', ['ngRoute', 'ngAnimate'])
 
 .value('owmCities', 
     ['New York', 'Dallas', 'Chicago'])
@@ -39,6 +39,25 @@ angular.module('OWMApp', ['ngRoute'])
     //     });
     // });
 
+})
+
+.run(function($rootScope, $location, $timeout) {
+
+    $rootScope.$on('$routeChangeError', function() {
+        $location.path("/error");
+    });
+
+    //rootScope isLoading boolean to true on route start
+    $rootScope.$on('$routeChangeStart', function(){
+        $rootScope.isLoading = true;
+    });
+
+    //is loading boolean = false after route change finish
+    $rootScope.$on('$routeChangeSuccess', function(){
+        $timeout(function(){
+            $rootScope.isLoading = false;
+        }, 1000);
+    });
 })
 
 //controller 'as' syntax allows the use of this in controller
