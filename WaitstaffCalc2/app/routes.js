@@ -15,5 +15,6 @@ angular.module('waitStaffCalcApp')
 			templateUrl: 'app/views/my-earnings.html',
 			controller: 'earningsController'
 		})
+
 	})
 ;
