@@ -3,7 +3,8 @@
 //.factory() to register services that use the api endpoints
 
 //shared service builds the request object
-function geonamesRequest($http, $q, GEONAMES_API_PREFIX, GEONAMES_USER) {
+(function () {
+	function geonamesRequest($http, $q, GEONAMES_API_PREFIX, GEONAMES_USER) {
 		return function(endpoint, params) {
 
 			params = params || {};
@@ -26,52 +27,57 @@ function geonamesRequest($http, $q, GEONAMES_API_PREFIX, GEONAMES_USER) {
 
 			return defer.promise;
 		}
-}
+	}
 
-//get list countries
-function countriesService(geonamesRequest, COUNTRIES_ENDPOINT){
+	//get list countries
+	function countriesService(geonamesRequest, COUNTRIES_ENDPOINT){
 		return {
 			getCountries: function(){
 				return geonamesRequest(COUNTRIES_ENDPOINT);
 			}
 		}
 
-}
+	}
 
-//get country detail, capital pop and neighbors
-function countryService($http, $route, geonamesRequest, COUNTRIES_ENDPOINT, SEARCH_ENDPOINT, NEIGHBOURS_ENDPOINT){
-	return {
-		countryDetail: function(){
-			params = {
-				country: $route.current.params.countryCode
-			}
-			return geonamesRequest(COUNTRIES_ENDPOINT, params)
+	//get country detail, capital pop and neighbors
+	function countryService($http, $route, geonamesRequest, COUNTRIES_ENDPOINT, SEARCH_ENDPOINT, NEIGHBOURS_ENDPOINT){
+		return {
+			countryDetail: function(){
+				params = {
+					country: $route.current.params.countryCode
+				}
+				return geonamesRequest(COUNTRIES_ENDPOINT, params)
 			},
 
-		capitalDetail: function(){
+			capitalDetail: function(){
 
-			params = {
-				country: $route.current.params.countryCode,
-				q: 'capital',
-				style: 'FULL'
-			}
+				params = {
+					country: $route.current.params.countryCode,
+					q: 'capital',
+					style: 'FULL'
+				}
 
-			return	geonamesRequest(SEARCH_ENDPOINT, params)
+				return	geonamesRequest(SEARCH_ENDPOINT, params)
 			},
 
-		countryNeighbours: function(){
+			countryNeighbours: function(){
 
-			params = {
-				country: $route.current.params.countryCode
-			}
+				params = {
+					country: $route.current.params.countryCode
+				}
 
-			return geonamesRequest(NEIGHBOURS_ENDPOINT, params)
+				return geonamesRequest(NEIGHBOURS_ENDPOINT, params)
 			}
 
 		}
-}
+	}
 
-angular
+	//manually inject dependencies for minification
+	geonamesRequest.$inject = ['$http', '$q', 'GEONAMES_API_PREFIX', 'GEONAMES_USER'];
+	countriesService.$inject = ['geonamesRequest', 'COUNTRIES_ENDPOINT'];
+	countryService.$inject = ['$http', '$route', 'geonamesRequest', 'COUNTRIES_ENDPOINT', 'SEARCH_ENDPOINT', 'NEIGHBOURS_ENDPOINT'];
+
+	angular
 	.module('geonamesApiLibrary', [])
 	.constant('GEONAMES_API_PREFIX', 'http://api.geonames.org')
 	.constant('COUNTRIES_ENDPOINT', '/countryInfo')
@@ -81,3 +87,5 @@ angular
 	.factory('geonamesRequest', geonamesRequest)
 	.factory('countriesService', countriesService)
 	.factory('countryService', countryService);
+
+})();
