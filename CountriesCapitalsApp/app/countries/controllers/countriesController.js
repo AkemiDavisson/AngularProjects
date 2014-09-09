@@ -1,6 +1,8 @@
 //countriesController.js
 //loads countries list page
 
+'use strict';
+
 (function () {
 	function countriesController($scope, $location, countriesList){
 

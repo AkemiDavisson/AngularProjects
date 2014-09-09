@@ -135,6 +135,13 @@ ul li a
 	text-decoration: none;
 }
 
+	ul li input 
+	{
+    	color: transparent !important;
+    	text-shadow: 0 0 0 white;
+    	width: 100px;
+	}
+
 .panel 
 {
 	background: rgba(255, 255, 255, 0.94);

@@ -2,6 +2,8 @@
 //.constant() for api values
 //.factory() to register services that use the api endpoints
 
+'use strict';
+
 //shared service builds the request object
 (function () {
 	function geonamesRequest($http, $q, GEONAMES_API_PREFIX, GEONAMES_USER) {
@@ -72,10 +74,12 @@
 		}
 	}
 
+
 	//manually inject dependencies for minification
 	geonamesRequest.$inject = ['$http', '$q', 'GEONAMES_API_PREFIX', 'GEONAMES_USER'];
 	countriesService.$inject = ['geonamesRequest', 'COUNTRIES_ENDPOINT'];
 	countryService.$inject = ['$http', '$route', 'geonamesRequest', 'COUNTRIES_ENDPOINT', 'SEARCH_ENDPOINT', 'NEIGHBOURS_ENDPOINT'];
+
 
 	angular
 	.module('geonamesApiLibrary', [])

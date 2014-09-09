@@ -1,6 +1,8 @@
 //countryController.js
 //loads country detail page
 
+'use strict';
+
 (function(){
 	function countryController($scope, country, capital, neighbours){
 

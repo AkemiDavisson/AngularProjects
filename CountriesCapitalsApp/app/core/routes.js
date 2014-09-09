@@ -2,6 +2,8 @@
 //config routes for cac-app module
 //loading gif timeout setup
 
+'use strict';
+
 (function(){
 	function config($routeProvider){
 		$routeProvider
@@ -61,3 +63,10 @@
 		.run(run);
 
 })();
+
+
+	   // resolve: {
+				// 	countriesList: function(geoNamesApi){
+				// 		return geoNamesApi.countriesService.getCountries();
+				// 	}
+				// }
