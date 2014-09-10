@@ -45,7 +45,7 @@
 	function countryService($http, $route, geonamesRequest, COUNTRIES_ENDPOINT, SEARCH_ENDPOINT, NEIGHBOURS_ENDPOINT){
 		return {
 			countryDetail: function(){
-				params = {
+				var params = {
 					country: $route.current.params.countryCode
 				}
 				return geonamesRequest(COUNTRIES_ENDPOINT, params)
@@ -53,7 +53,7 @@
 
 			capitalDetail: function(){
 
-				params = {
+				var params = {
 					country: $route.current.params.countryCode,
 					q: 'capital',
 					style: 'FULL'
@@ -64,7 +64,7 @@
 
 			countryNeighbours: function(){
 
-				params = {
+				var params = {
 					country: $route.current.params.countryCode
 				}
 
