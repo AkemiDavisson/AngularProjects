@@ -133,14 +133,14 @@ ul li a
 	font-weight: bold;
 	color: #9E0000;
 	text-decoration: none;
+	
 }
 
-	ul li input 
-	{
-    	color: transparent !important;
-    	text-shadow: 0 0 0 white;
-    	width: 100px;
-	}
+a 
+{
+	text-decoration: none;
+	
+}
 
 .panel 
 {
@@ -204,11 +204,6 @@ ul li a
 	text-align: center;
 }
 
-	.actions input 
-	{
-    	color: transparent;
-    	text-shadow: 0 0 0 white;
-	}
 
 
 .btn {
@@ -225,6 +220,7 @@ ul li a
 	font-size: 14px;
 	line-height: 1.42857143;
 	border-radius: 4px;
+	width: 120px;
 }
 
 .btn-grey {
