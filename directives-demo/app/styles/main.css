@@ -8,7 +8,7 @@
 body 
 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   height: 100%; width: 100%; margin: 0;
   overflow:hidden
@@ -157,7 +157,43 @@ hr {
 
 .edit-box 
 {
-  padding: 20px;
-  outline: 3px dashed #CCC;
+  padding: 10px;
+  outline: 3px dashed #8797C9;
+  background: #AFBCCA;
   margin-bottom: 20px;
+}
+
+  .edit-box p 
+  {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+.editable-box 
+{
+  outline: 3px dashed #0085FF;
+  background: #F5F5F5;
+}
+
+.btn {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  width: 120px;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #0149A5;
+  border-color: #187AC7;
 }
