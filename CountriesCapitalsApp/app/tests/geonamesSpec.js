@@ -83,7 +83,7 @@ describe('geonamesRequest', function(){
 		$httpBackend.expect('GET', countriesUrl).respond(countries);
 
 		geonamesRequest(countriesEndpoint).then(function(result){
-			expect(result.length).toEqual(2);
+			expect(result.length).toEqual(1);
 		});
 
 		//trigger angular's digest cycle (how & when angular updates models and scope)

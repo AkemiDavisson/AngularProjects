@@ -1,0 +1,74 @@
+
+select 
+{
+  display: inline-block;
+  width: 30%%;
+  height: 32px;
+  margin: 0px 10px 10px 0px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button 
+{
+	padding: 4px 12px !important;
+}
+
+.calendar {
+	margin-top: 10px;
+	border: 1px solid #000;
+	border-collapse: collapse;
+	border-radius: 6px;
+	border-spacing: 0;
+	width: 1099px;
+	font-size: 1.2rem;
+	color: #08389C;
+	overflow: auto;
+
+}
+
+.calendar div {
+	display: inline-block;
+}
+
+.day {
+
+	border: 1px solid #777777;
+	background: #fff;
+	width: 155px;
+	height: 130px;
+	float: left;
+	position: relative;
+}
+
+.day.header {
+	height: 30px;
+	border: 1px solid #000;
+	background: #3E3C68;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.day span 
+{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.today
+{
+	background: #B0D9FF;
+}
+
+.notCurrentMonth
+{
+	background: #AB9AAB
+}

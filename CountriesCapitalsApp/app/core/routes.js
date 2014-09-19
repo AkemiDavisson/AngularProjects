@@ -2,9 +2,10 @@
 //config routes for cac-app module
 //loading gif timeout setup
 
-'use strict';
-
 (function(){
+
+	'use strict';
+
 	function config($routeProvider){
 		$routeProvider
 
@@ -51,7 +52,7 @@
 	        $rootScope.isLoading = false;
 	      }, 1500);
 	    });
-		}
+	}
 
 	//manually inject dependencies for minification
 	config.$inject = ['$routeProvider'];
@@ -60,13 +61,6 @@
 	angular
 		.module('cac-app')
 		.config(config)
-		.run(run);
+		.run(run);	
 
 })();
-
-
-	   // resolve: {
-				// 	countriesList: function(geoNamesApi){
-				// 		return geoNamesApi.countriesService.getCountries();
-				// 	}
-				// }

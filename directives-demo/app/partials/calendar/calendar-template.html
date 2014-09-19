@@ -1,0 +1,21 @@
+
+<select class='pull-left' ng-model="date.month">
+    <option ng-repeat="month in months" value="{{ $index }}" ng-selected="$index == date.month">{{ month }}</option>
+  </select>
+<select class='pull-left' ng-model="date.year" ng-options='year for year in years'>
+</select>
+<button class='btn btn-blue pull-left' ng-click='today()'>Today</button>
+<div class="calendar">
+	<div class="day header">Sunday</div>
+	<div class="day header">Monday</div>
+	<div class="day header">Tuesday</div>
+	<div class="day header">Wednesday</div>
+	<div class="day header">Thursday</div>
+	<div class="day header">Friday</div>
+	<div class="day header">Saturday</div>
+
+	<div class="day" ng-repeat="day in range.days"
+	ng-class='{notCurrentMonth: !isCurrentMonth(day.date), today:isToday(day.date)}'>
+		<span>{{day.day}}</span>
+	</div>
+</div>

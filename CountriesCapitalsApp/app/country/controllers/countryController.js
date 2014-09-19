@@ -1,9 +1,10 @@
 //countryController.js
 //loads country detail page
 
-'use strict';
-
 (function(){
+
+	'use strict';
+
 	function countryController($scope, country, capital, neighbours){
 
 		//country service
@@ -22,4 +23,5 @@
 	angular
 		.module('cac-app')
 		.controller('countryController', countryController);
+
 })();

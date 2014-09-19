@@ -2,10 +2,12 @@
 //.constant() for api values
 //.factory() to register services that use the api endpoints
 
-'use strict';
 
 //shared service builds the request object
-(function () {
+(function (){
+
+	'use strict';
+
 	function geonamesRequest($http, $q, GEONAMES_API_PREFIX, GEONAMES_USER) {
 		return function(endpoint, params) {
 
@@ -28,7 +30,7 @@
 			});
 
 			return defer.promise;
-		}
+		};
 	}
 
 	//get list countries
@@ -37,7 +39,7 @@
 			getCountries: function(){
 				return geonamesRequest(COUNTRIES_ENDPOINT);
 			}
-		}
+		};
 
 	}
 
@@ -47,8 +49,8 @@
 			countryDetail: function(){
 				var params = {
 					country: $route.current.params.countryCode
-				}
-				return geonamesRequest(COUNTRIES_ENDPOINT, params)
+				};
+				return geonamesRequest(COUNTRIES_ENDPOINT, params);
 			},
 
 			capitalDetail: function(){
@@ -57,30 +59,28 @@
 					country: $route.current.params.countryCode,
 					q: 'capital',
 					style: 'FULL'
-				}
+				};
 
-				return	geonamesRequest(SEARCH_ENDPOINT, params)
+				return	geonamesRequest(SEARCH_ENDPOINT, params);
 			},
 
 			countryNeighbours: function(){
 
 				var params = {
 					country: $route.current.params.countryCode
-				}
+				};
 
-				return geonamesRequest(NEIGHBOURS_ENDPOINT, params)
+				return geonamesRequest(NEIGHBOURS_ENDPOINT, params);
 			}
 
-		}
+		};
 	}
-
 
 	//manually inject dependencies for minification
 	geonamesRequest.$inject = ['$http', '$q', 'GEONAMES_API_PREFIX', 'GEONAMES_USER'];
 	countriesService.$inject = ['geonamesRequest', 'COUNTRIES_ENDPOINT'];
 	countryService.$inject = ['$http', '$route', 'geonamesRequest', 'COUNTRIES_ENDPOINT', 'SEARCH_ENDPOINT', 'NEIGHBOURS_ENDPOINT'];
-
-
+	
 	angular
 	.module('geonamesApiLibrary', [])
 	.constant('GEONAMES_API_PREFIX', 'http://api.geonames.org')

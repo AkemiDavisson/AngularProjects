@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('directives-demo-app', ['ngAnimate', 'ngCookies', 'ngSanitize', 'ngRoute'])
+angular.module('directives-demo-app', ['ngAnimate', 'ngRoute'])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
@@ -12,6 +12,9 @@ angular.module('directives-demo-app', ['ngAnimate', 'ngCookies', 'ngSanitize', '
       })
       .when('/editable-item', {
         templateUrl: 'partials/editable-item/editable-item.html'
+      })
+      .when('/calendar', {
+        templateUrl: 'partials/calendar/calendar.html'
       })
       .otherwise({
         redirectTo: '/'

@@ -1,6 +1,6 @@
-angular
-	.module('directives-demo-app')
-	.directive('optIn', optIn);
+(function() {
+	
+'use strict';
 
 function optIn() {
 	var directive = {
@@ -10,5 +10,11 @@ function optIn() {
       templateUrl: 'partials/simple-login/opt-in-template.html'
 	};
 
-	return	directive;
-};
+		return	directive;
+	}
+
+angular
+	.module('directives-demo-app')
+	.directive('optIn', optIn);
+
+})();

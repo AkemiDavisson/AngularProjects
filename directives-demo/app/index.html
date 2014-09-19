@@ -16,6 +16,7 @@
 
     <!-- build:css({.tmp,app}) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/calendar.css">
     <!-- endbuild -->
 
     <!-- build:js scripts/modernizr.js -->
@@ -30,10 +31,8 @@
       <nav class="navbar">
         <a href="#">Angular Directives Demo</a>
 
-        <ul>
-          <li class="active"><a ng-href="#">Home</a></li>
-          <li><a ng-href="#/simple-login">Simple Login Directive</a></li>
-          <li><a ng-href="#/editable-item">Editable Item Directive</a></li>
+        <ul ng-controller="navController">
+          <li ng-repeat="item in navItems" ng-class="{active: isActive(item)}"><a href="#{{item.path}}">{{item.title}}</a>
         </ul>
       </nav>
     </div>
@@ -41,37 +40,34 @@
     <div ng-view></div>
     <div class='container'>
       <div class="footer">
-        <p>With ♥ from <a href="https://twitter.com/Swiip">@Swiip</a></p>
+        <p>With ♥ from <a href="https://twitter.com/Akemi_Davisson">@Akemi_Davisson</a></p>
       </div>
     </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-animate/angular-animate.js"></script>
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:js({app,.tmp}) scripts/main.js -->
     <script src="scripts/directives-demo-app.js"></script>
     <script src="scripts/main/main-ctrl.js"></script>
+    <script type="text/javascript" src="scripts/nav-controller.js"></script>
     <script type="text/javascript" src="scripts/simple-login/opt-in-directive.js"></script>
-
     <script type="text/javascript" src="scripts/editable-items/editable-directive.js"></script>
-
+    <script type="text/javascript" src="scripts/utilities/calendar-range/calendarRange.js"></script>
+    <script type="text/javascript" src="scripts/calendar/calendar-controller.js"></script>
+     <script type="text/javascript" src="scripts/calendar/calendar-directive.js"></script>
     <!-- inject:partials -->
     <!-- angular templates will be automaticaly converted in js and inserted here -->
     <!-- endinject -->

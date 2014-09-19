@@ -31,35 +31,33 @@ gulp.task('copy-img-files', function() {
 gulp.task('usemin', function() {
   gulp.src('./app/index.html')
     .pipe(usemin({
-      css: [minifyCss(), 'concat', rev()]
-      // js: [uglify({outSourceMap: true}), rev()]
-
+      css: [minifyCss(), 'concat', rev()],
+      js: [uglify({mangle: false}), rev()]
     }))
     .pipe(gulp.dest('build/'));
 });
 
 
-var files = [
-  'app/bower_components/angular/angular.js',
-  'app/bower_components/angular-route/angular-route.js',
-  'app/bower_components/angular-animate/angular-animate.js',
-  'app/bower_components/ngAnimate-animate.css/animate.js',
-  'app/core/services/geonamesApiLibrary.js',
-  'app/core/cac-app.js',
-  'app/countries/controllers/countriesController.js',
-  'app/country/controllers/countryController.js',
-  'app/core/routes.js'
-]
+// var files = [
+//   'app/bower_components/angular/angular.js',
+//   'app/bower_components/angular-route/angular-route.js',
+//   'app/bower_components/angular-animate/angular-animate.js',
+//   'app/bower_components/ngAnimate-animate.css/animate.js',
+//   'app/core/services/geonamesApiLibrary.js',
+//   'app/core/cac-app.js',
+//   'app/countries/controllers/countriesController.js',
+//   'app/country/controllers/countryController.js',
+//   'app/core/routes.js'
+// ]
 
-gulp.task('js', function() {
-  gulp.src(files)
-    .pipe(sourcemaps.init())
-      .pipe(concat('all.js'))
-      .pipe(uglify())
-    .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest('build/_assets/'));
-});
+// gulp.task('js', function() {
+//   gulp.src('./app/index.html')
+//     .pipe(uglify('combined.js', {
+//       mangle: false    
+//     }))
+//     .pipe(gulp.dest('build/'))
+// });
 
 //cleanup task
 
-gulp.task('build', ['copy-html-files','usemin', 'js','copy-img-files']);
+gulp.task('build', ['copy-html-files','usemin', 'copy-img-files']);

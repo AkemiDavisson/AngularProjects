@@ -1,9 +1,9 @@
-.browsehappy {
+/*.browsehappy {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
   padding: 0.2em 0;
-}
+}*/
 
 body 
 {
@@ -67,7 +67,7 @@ a {
 }
 
 .jumbotron {
-  padding: 60px;
+  padding: 30px;
   margin-bottom: 30px;
   background-color: gainsboro;
   border-radius: 6px;
@@ -93,7 +93,7 @@ input
 .col
 {
     float: left;
-    width: 45%;
+    width: 40%;
     font-size: 24px;
     padding: 15px;
 }
@@ -101,7 +101,7 @@ input
 .col-12
 {
     float: left;
-    width: 94%;
+    width: 89%;
     font-size: 24px;
     padding: 15px;
 }
@@ -111,6 +111,12 @@ input
     padding: 5px 5px; 
     height: auto;
     overflow: auto;
+}
+
+.form-container 
+{
+  width: 50%;
+  margin: auto;
 }
 
 .btn {
@@ -134,6 +140,13 @@ input
   background-color: #5cb85c;
   border-color: #4cae4c;
 }
+
+.btn-blue {
+  color: #fff;
+  background-color: #0149A5;
+  border-color: #187AC7;
+}
+
 .pull-left {
   float: left;
 }
@@ -173,27 +186,4 @@ hr {
 {
   outline: 3px dashed #0085FF;
   background: #F5F5F5;
-}
-
-.btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  text-align: center;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  width: 120px;
-}
-
-.btn-blue {
-  color: #fff;
-  background-color: #0149A5;
-  border-color: #187AC7;
 }
